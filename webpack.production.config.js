@@ -2,7 +2,7 @@ var path = require('path')
 var webpack = require('webpack')
 var CleanWebpackPlugin = require('clean-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
-var CopyWebpackPlugin = require('copy-webpack-plugin')
+// var CopyWebpackPlugin = require('copy-webpack-plugin')
 
 // Phaser webpack config
 var phaserModule = path.join(__dirname, '/node_modules/phaser/')
@@ -56,10 +56,10 @@ module.exports = {
       },
       hash: true
     }),
-    new CopyWebpackPlugin([
-            { from: './src/image', to: './src/image'},
-            { from: './src/sound', to: './src/sound'}
-        ])
+    // new CopyWebpackPlugin([
+    //         { from: './src/image', to: './src/image'},
+    //         { from: './src/sound', to: './src/sound'}
+    //     ])
   ],
   module: {
     rules: [
