@@ -56,10 +56,10 @@ module.exports = {
       },
       hash: true
     }),
-    // new CopyWebpackPlugin([
-    //         { from: './src/image', to: './src/image'},
-    //         { from: './src/sound', to: './src/sound'}
-    //     ])
+    new CopyWebpackPlugin([
+      { from: './assets/image', to: './build/assets/image' },
+      { from: './assets/music', to: './build/assets/music' }
+    ])
   ],
   module: {
     rules: [
